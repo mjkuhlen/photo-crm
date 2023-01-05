@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Group, MantineProvider, Stack, Text } from '@mantine/core';
+import { Routes, Route } from 'react-router-dom';
+import Browser from './Components/Browser';
+import Content from './Components/Content';
+import Inspector from './Components/Inspector';
+import Shell from './Components/Shell'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MantineProvider withGlobalStyles withNormalizeCSS theme={{colorScheme:'dark'}}>
+      <Routes>
+        <Route path="/" element={<Shell />}>
+          <Route path="all" element={<Content />} />
+          <Route path="lastImport" element={<Content />} />
+        </Route>
+      </Routes>
+    </MantineProvider>
   );
 }
-
-export default App;

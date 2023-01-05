@@ -1,4 +1,4 @@
-import { Grid, Paper, Image, AspectRatio, Center, Group, Aside, Button, Divider, ScrollArea } from "@mantine/core"
+import { Grid, Image, AspectRatio, Center, Aside, Divider, ScrollArea } from "@mantine/core"
 import { useState } from "react"
 import EXIF from "./EXIF"
 import { useOutletContext } from "react-router-dom"

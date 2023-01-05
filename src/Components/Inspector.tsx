@@ -1,4 +1,4 @@
-import { Container, Navbar, Paper, Text } from "@mantine/core"
+import { Paper, Text } from "@mantine/core"
 
 
 function Inspector() {

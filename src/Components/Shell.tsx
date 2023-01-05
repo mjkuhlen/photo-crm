@@ -1,8 +1,6 @@
 import { AppShell, Button, Footer, Group, Header, Navbar, ScrollArea, Slider, Text } from "@mantine/core";
 import { useState } from "react";
 import Browser from "./Browser";
-import Content from "./Content";
-import Inspector from "./Inspector";
 import { Outlet } from 'react-router-dom'
 
 function Shell() {

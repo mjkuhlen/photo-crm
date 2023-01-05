@@ -1,8 +1,6 @@
-import { Group, MantineProvider, Stack, Text } from '@mantine/core';
+import { MantineProvider } from '@mantine/core';
 import { Routes, Route } from 'react-router-dom';
-import Browser from './Components/Browser';
 import Content from './Components/Content';
-import Inspector from './Components/Inspector';
 import Shell from './Components/Shell'
 
 export default function App() {
